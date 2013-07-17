@@ -1,0 +1,24 @@
+elpi stands for Emacs Lisp Packages for Info documentation. It is a
+collection of recipes to build GNU Emacs packages wrapping Info
+documentation produced.
+
+There are various reasons why one needs such recipes:
+
+1. When a computer host run the Debian GNU/Linux operating system,
+   there are Info documentation files not distributed from the
+   official repositories because of licence considerations (e.g. GNU
+   Bash); Thus users of such host have to repeatedly search the web
+   for that documentation and install it by hand.
+
+2. Many Python based projects don't distribute Info documentation but
+   they build their documentation with Sphinx which has a Texinfo
+   backend (e.g. Django): One has to build and install that
+   documentation by hand.
+
+3. All documentation should be easily available to users: Do not rely
+   on a system administrator to read documentation.
+
+# Local Variables:
+# mode: text;
+# ispell-local-dictionary: "en"
+# End:
