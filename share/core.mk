@@ -1,27 +1,14 @@
 # Build sphinx documentation of package
 
-# Targets depends on the following variables:
-# pkgnam pkgver pkgrel url
+pkgdir ?= $(pkgnam)-$(pkgver).$(pkgrel)
+pkgarc ?= $(pkgdir).tar.gz
+srcdir ?= $(pkgdir)/docs
+infdir ?= $(srcdir)/_build/texinfo
 
-# TODO Do not override following variables if already defined
-
-name=$(pkgnam)-doc
-version=$(pkgver).$(pkgrel)
-package=$(name)-$(version)
-
-pkgdir=$(pkgnam)-$(pkgver).$(pkgrel)
-srcdir=$(pkgdir)/docs
-infdir=$(srcdir)/_build/texinfo
-
-.PHONY: all help clean distclean info
-
-all: $(package).tar
+.PHONY: clean info
 
 clean:
-	-rm -r $(package) $(pkgdir) $(pkgdir).tar.gz
-
-distclean: clean
-	-rm $(package).tar
+	-rm -r $(pkgdir) $(pkgdir).tar.gz
 
 info: $(srcdir)
 	cd $<; make texinfo
@@ -29,8 +16,8 @@ info: $(srcdir)
 
 $(srcdir): $(pkgdir)
 
-$(pkgdir): $(pkgdir).tar.gz
+$(pkgdir): $(pkgarc)
 	[ -x $(pkgdir) ] || ( tar -xf $< )
 
-$(pkgdir).tar.gz:
+$(pkgarc):
 	wget $(url)/$@
