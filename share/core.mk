@@ -8,7 +8,7 @@ infdir ?= $(srcdir)/_build/texinfo
 .PHONY: clean info
 
 clean:
-	-rm -r $(pkgdir) $(pkgdir).tar.gz
+	-rm -r $(pkgdir) $(pkgarc)
 
 info: $(srcdir)
 	cd $<; make texinfo
