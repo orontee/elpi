@@ -1,6 +1,8 @@
-ELPI stands for Emacs Lisp Packages for Info documentation. It is a
-collection of recipes to build GNU Emacs packages wrapping Info
-documentation produced.
+
+	      Emacs Lisp Packages for Info documentation
+
+This is a collection of recipes to build GNU Emacs packages wrapping
+Info documentation.
 
 There are various reasons why one needs such recipes:
 
@@ -17,6 +19,8 @@ There are various reasons why one needs such recipes:
 
 3. All documentation should be easily available to users: Do not rely
    on a system administrator to read documentation.
+
+I am convinced that local and integrated documentation is a must.
 
 # Local Variables:
 # mode: text;
