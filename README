@@ -1,4 +1,4 @@
-elpi stands for Emacs Lisp Packages for Info documentation. It is a
+ELPI stands for Emacs Lisp Packages for Info documentation. It is a
 collection of recipes to build GNU Emacs packages wrapping Info
 documentation produced.
 
@@ -12,7 +12,7 @@ There are various reasons why one needs such recipes:
 
 2. Many Python based projects don't distribute Info documentation but
    they build their documentation with Sphinx which has a Texinfo
-   backend (e.g. Django): One has to build and install that
+   builder (e.g. Django): One has to build and install that
    documentation by hand.
 
 3. All documentation should be easily available to users: Do not rely
