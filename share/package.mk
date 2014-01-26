@@ -16,11 +16,10 @@ $(package).tar: info $(package)/$(name)-pkg.el
 	tar -cf $@ $(package)
 
 $(package)/$(name)-pkg.el: $(package)
-	touch $@
-	echo ";; Package automatically build from $(pkgnam) sources"
-	echo ";; See: https://gitorious.org/emacs-lisp-packages-for-info-documentation"
-	echo 
-	echo "(define-package \"$(name)\""  > $@
+	echo ";; Package automatically build from $(pkgnam) sources" > $@
+	echo ";; See: https://gitorious.org/emacs-lisp-packages-for-info-documentation" >> $@
+	echo >> $@
+	echo "(define-package \"$(name)\""  >> $@
 	echo "                \"$(version)\""  >> $@
 	echo "                \"Info documentation for $(pkgnam)\")" >> $@
 
