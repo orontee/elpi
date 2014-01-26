@@ -1,4 +1,5 @@
 *~
 Django-doc/Django-*
 git-doc/git-*
+python2-doc/Python-*
 *.tar.gz
