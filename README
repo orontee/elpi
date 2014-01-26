@@ -5,6 +5,9 @@
 This is a collection of recipes to build GNU Emacs packages wrapping
 Info documentation.
 
+Why?
+====
+
 There are various reasons why one needs such recipes:
 
 1. When a computer host run the Debian GNU/Linux operating system,
@@ -23,6 +26,9 @@ There are various reasons why one needs such recipes:
 
 4. Local and integrated documentation is always better that online
    documentation.
+
+5. Distributing documentation encapsulated in GNU Emacs packages ease
+   the installation process for GNU Emacs users
 
 .. Local Variables:
 .. mode: rst

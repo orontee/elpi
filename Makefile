@@ -1,4 +1,4 @@
-SUBDIRS = Django-doc
+SUBDIRS = Django-doc git-doc
 
 SUBDIRS-distclean = $(addsuffix -distclean, $(SUBDIRS))
 SUBDIRS-clean = $(addsuffix -clean, $(SUBDIRS))

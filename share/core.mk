@@ -3,16 +3,12 @@
 pkgdir ?= $(pkgnam)-$(pkgver).$(pkgrel)
 pkgarc ?= $(pkgdir).tar.gz
 srcdir ?= $(pkgdir)/docs
-infdir ?= $(srcdir)/_build/texinfo
+infdir ?= $(srcdir)
 
 .PHONY: clean info
 
 clean:
 	-rm -r $(pkgdir) $(pkgarc)
-
-info: $(srcdir)
-	cd $<; make texinfo
-	cd $(infdir); make info
 
 $(srcdir): $(pkgdir)
 

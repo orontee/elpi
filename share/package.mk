@@ -8,7 +8,7 @@ distclean: clean
 	-rm $(package) $(package).tar
 
 $(package).tar: info $(package)/$(name)-pkg.el
-	cp $(infdir)/*.{png,info} $(package)
+	find $(infdir) -name '*.info' -or -name '*.png' -exec cp {} $(package) \;
 	for FILE in $(package)/*.info; do \
 		install-info --info-dir=$(package) $${FILE}; \
 	done
