@@ -15,10 +15,7 @@ include ../share/core.mk
 include ../share/package.mk
 
 texinfo: $(srcdir)
-	cd $(srcdir); $(SPHINX) -b texinfo -d build/doctrees . build/info
-
-# WARNING One must edit $(srcdir)/conf.py to comment the extensions
-# definition...
+	cd $(srcdir); $(SPHINX) -C -D project='Python' -D copyright="1990-$(date +%Y), Python Software Foundation" -b texinfo -d build/doctrees . build/info
 
 info: texinfo
 	$(MAKE) -C $(infdir) $@
