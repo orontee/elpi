@@ -5,7 +5,8 @@
 all: $(package).tar
 
 distclean: clean
-	-rm $(package) $(package).tar
+	-rm -r $(package)
+	-rm $(package).tar
 
 $(package).tar: info $(package)/$(name)-pkg.el
 	find $(infdir) -name '*.info' -or -name '*.png' -exec cp {} $(package) \;

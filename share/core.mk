@@ -8,7 +8,8 @@ infdir ?= $(srcdir)
 .PHONY: clean info
 
 clean:
-	-rm -r $(pkgdir) $(pkgarc)
+	-rm -r $(pkgdir)
+	-rm $(pkgarc)
 
 $(srcdir): $(pkgdir)
 
