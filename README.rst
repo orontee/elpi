@@ -29,8 +29,15 @@ There are various reasons why one needs such recipes:
 
 5. Distributing documentation encapsulated in GNU Emacs packages ease
    the installation process for GNU Emacs users
+
+How?
+====
+
+Install ``sphinx``, ``asciidoc``, ``docbook2xml`` and... the
+dependencies expected by the documentation you want to build...
+
+Then it should be a matter of running ``make``.
 
 .. Local Variables:
-.. mode: rst
 .. ispell-local-dictionary: "en"
 .. End:
