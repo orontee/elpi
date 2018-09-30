@@ -13,5 +13,4 @@ include ../share/core.mk
 include ../share/package.mk
 
 info: $(srcdir)
-	cd $(srcdir); sphinx-build -b texinfo -d _build/doctrees . build/texinfo
-	cd $(srcdir); make -C build/texinfo info
+	cd $(srcdir); make info
