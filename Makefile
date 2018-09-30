@@ -1,4 +1,5 @@
 SUBDIRS = git-doc numpy-doc python3-doc shapely-doc
+SUBDIRS += scikit-learn-doc scikit-image-doc
 
 SUBDIRS-distclean = $(addsuffix -distclean, $(SUBDIRS))
 SUBDIRS-clean = $(addsuffix -clean, $(SUBDIRS))
