@@ -1,6 +1,6 @@
 pkgnam=git
-pkgver=1.8.5
-pkgrel=3
+pkgver=2.17
+pkgrel=1
 url=https://github.com/git/git/archive
 
 pkgarc = v$(pkgver).$(pkgrel).tar.gz

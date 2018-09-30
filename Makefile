@@ -1,4 +1,4 @@
-SUBDIRS = python3-doc shapely-doc
+SUBDIRS = git-doc python3-doc shapely-doc
 
 SUBDIRS-distclean = $(addsuffix -distclean, $(SUBDIRS))
 SUBDIRS-clean = $(addsuffix -clean, $(SUBDIRS))
