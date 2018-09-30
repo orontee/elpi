@@ -1,4 +1,4 @@
-SUBDIRS = Django-doc git-doc python2-doc
+SUBDIRS = python3-doc shapely-doc
 
 SUBDIRS-distclean = $(addsuffix -distclean, $(SUBDIRS))
 SUBDIRS-clean = $(addsuffix -clean, $(SUBDIRS))
