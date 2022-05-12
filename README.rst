@@ -33,8 +33,12 @@ There are various reasons why one needs such recipes:
 How?
 ====
 
-Install ``sphinx``, ``asciidoc``, ``docbook2xml`` and... the
-dependencies expected by the documentation you want to build...
+Install ``sphinx``, ``asciidoc`` and... the dependencies expected by
+the documentation you want to build...::
+
+   python3 -m venv env
+   source env/bin/activate
+   python3 -m pip install sphinx asciidoc
 
 Then it should be a matter of running ``make``.
 
