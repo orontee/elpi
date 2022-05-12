@@ -1,5 +1,7 @@
 *~
-Django-doc/Django-*
-git-doc/git-*
-python2-doc/Python-*
+/Django-doc/Django-*
+/git-doc/git-*
+/python2-doc/Python-*
+/sympy-doc/sympy-*
 *.tar.gz
+/env
