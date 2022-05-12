@@ -1,13 +1,13 @@
 pkgnam=Python
-pkgver=3.7
-pkgrel=0
+pkgver=3.9
+pkgrel=2
 url=http://www.python.org/ftp/python/${pkgver}.${pkgrel}
 
 pkgarc = $(pkgdir).tgz
 srcdir = $(pkgdir)/Doc
 infdir = $(srcdir)/build/info
 
-PYTHON=python3.7
+PYTHON=python3.9
 SPHINX=sphinx-build
 
 include ../share/all.mk
