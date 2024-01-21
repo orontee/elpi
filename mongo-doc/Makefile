@@ -1,14 +1,16 @@
-pkgnam=Python
-pkgver=2.7
-pkgrel=11
-url=http://www.python.org/ftp/python/${pkgver}.${pkgrel}
+
+
+pkgnam=mongo
+pkgver=4.0
+pkgrel=0
+url=https://github.com/mongodb/docs.git
 
 pkgarc = $(pkgdir).tgz
 srcdir = $(pkgdir)/Doc
 infdir = $(srcdir)/build/info
 
-PYTHON=python2.7
-SPHINX=sphinx-build2
+PYTHON=python3.7
+SPHINX=sphinx-build
 
 include ../share/all.mk
 include ../share/core.mk
@@ -19,3 +21,4 @@ texinfo: $(srcdir)
 
 info: texinfo
 	$(MAKE) -C $(infdir) $@
+

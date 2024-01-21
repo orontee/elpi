@@ -1,4 +1,4 @@
-pkgnam=Shapely
+pkgnam=shapely
 pkgver=1.6
 pkgrel=4
 url=https://github.com/Toblerity/Shapely/archive/

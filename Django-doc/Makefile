@@ -1,6 +1,6 @@
 pkgnam=Django
-pkgver=1.5
-pkgrel=1
+pkgver=1.6
+pkgrel=4
 url=https://www.djangoproject.com/m/releases/${pkgver}/
 
 infdir = $(srcdir)/_build/texinfo

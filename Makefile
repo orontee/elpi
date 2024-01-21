@@ -1,6 +1,7 @@
-SUBDIRS = git-doc numpy-doc python3-doc shapely-doc
+SUBDIRS = python3-doc
+SUBDIRS = git-doc numpy-doc python2-doc shapely-doc
 SUBDIRS += scikit-learn-doc scikit-image-doc
-SUBDIRS += sympy-doc
+SUBDIRS += sympy-doc Django-doc mongo-doc
 
 SUBDIRS-distclean = $(addsuffix -distclean, $(SUBDIRS))
 SUBDIRS-clean = $(addsuffix -clean, $(SUBDIRS))
