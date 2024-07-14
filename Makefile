@@ -1,5 +1,5 @@
 SUBDIRS = cmake-doc python3-doc
-SUBDIRS += git-doc numpy-doc python2-doc shapely-doc
+SUBDIRS += git-doc numpy-doc shapely-doc
 SUBDIRS += scikit-learn-doc scikit-image-doc
 SUBDIRS += sympy-doc Django-doc mongo-doc
 
