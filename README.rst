@@ -38,9 +38,9 @@ the documentation you want to build...::
 
    python3 -m venv env
    source env/bin/activate
-   python3 -m pip install sphinx asciidoc
+   python3 -m pip install -r requirements.txt
 
-Then it should be a matter of running ``make``.
+Then it should be a matter of running ``make`` or ``make PACKAGE``.
 
 .. Local Variables:
 .. ispell-local-dictionary: "en"
